@@ -1,5 +1,5 @@
 pnpm install
-pmpm reset 
+pnpm reset 
 and open `http://localhost:4173/` 
 reload page 2-3 times and white screen
 
