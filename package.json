@@ -4,22 +4,22 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "reset": "pnpm build && pnpm preview"
+    "dev": "NODE_ENV=production vite --port 3000",
+    "build": "vue-tsc && vite build --watch",
+    "preview": "vite preview --port 3000",
+    "reset": "pnpm build"
   },
   "dependencies": {
-    "@huntersofbook/core": "^0.4.7",
+    "@huntersofbook/core": "^0.4.13",
     "date-fns": "^2.29.3",
     "defu": "^6.1.1",
     "es-cookie": "^1.4.0",
     "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue": "^4.0.0-alpha.0",
     "typescript": "^4.9.3",
-    "vite": "^3.2.4",
+    "vite": "^4.0.0-alpha.4",
     "vue-tsc": "^1.0.9"
   }
 }

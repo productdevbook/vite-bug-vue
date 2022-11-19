@@ -8,14 +8,18 @@ const locale = await loadDateFNSLocale({
     storageKey: 'locale'
 }) 
 const app = createApp(App)
-const huntersofbook = createHuntersofbookEssential({
-  config: {
-    dateFns: {
-      locale
+try {
+  const huntersofbook = createHuntersofbookEssential({
+    config: {
+      dateFns: {
+        locale
+      }
     }
-  }
-})
-app.use(huntersofbook)
+  })
+} catch (error) {
+  
+}
+// app.use(huntersofbook)
 
 console.log(locale)
 
